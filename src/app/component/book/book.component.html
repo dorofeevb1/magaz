@@ -1,0 +1,19 @@
+<div>
+  <h3 class="name">book</h3>
+  <div class="posts">
+    <div
+      (click)="openBookDialog(book)"
+      class="post"
+      *ngFor="let book of bookArr"
+    >
+      <div>
+        <img class="png" [src]="book.img" alt="" />
+      </div>
+
+      <div>
+        <div>{{ book.name }}</div>
+        <p>{{ book.price }}$</p>
+      </div>
+    </div>
+  </div>
+</div>

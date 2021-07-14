@@ -1,0 +1,22 @@
+<div class="totalPrice">{{ totalPrice.toFixed(2) }}$</div>
+<div class="posts">
+  <div class="post" *ngFor="let phone of shopPhones">
+    <div>
+      <img class="png" [src]="phone.img" alt="" />
+    </div>
+
+    <div class="name">
+      <div>{{ phone.name }}</div>
+      <div class="price">
+        <p>{{ phone.price }}$</p>
+      </div>
+    </div>
+    <div class="btns">
+      <button class="btn" (click)="deletePhone(phone)">Удалить</button>
+
+      <a [href]="phone.link" target="_blank" rel="noopener noreferrer nofollow">
+        <button class="btn2">Купить</button></a
+      >
+    </div>
+  </div>
+</div>

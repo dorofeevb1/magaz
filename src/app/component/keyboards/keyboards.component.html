@@ -1,0 +1,19 @@
+<div>
+  <h3 class="name">keybords</h3>
+  <div class="posts">
+    <div
+      (click)="openNotebookDialog(keybords)"
+      class="post"
+      *ngFor="let keybords of keybords"
+    >
+      <div>
+        <img class="png" [src]="keybords.img" alt="" />
+      </div>
+
+      <div>
+        <div>{{ keybords.name }}</div>
+        <p>{{ keybords.price }}$</p>
+      </div>
+    </div>
+  </div>
+</div>

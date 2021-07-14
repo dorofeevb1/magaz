@@ -1,0 +1,9 @@
+<div class="blog">
+  <div class="post" *ngFor="let blog of bloglist">
+    <h2 class="name">{{ blog.name }}</h2>
+    <img class="png" [src]="blog.img" alt="" />
+    <p class="text">{{ blog.text }}</p>
+    <p class="text">{{ blog.post }}</p>
+    <button class="btn" routerLink="/blog">back</button>
+  </div>
+</div>

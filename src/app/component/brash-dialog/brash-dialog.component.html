@@ -1,0 +1,18 @@
+<div class="container">
+  <div>
+    <img class="png" [src]="config.item.img" />
+
+    <div class="name">{{ config.item.name }}</div>
+    <div>{{ config.item.price }}$</div>
+  </div>
+  <div class="description">
+    <div>{{ config.item.description }}</div>
+
+    <button class="favor" (click)="addToFavorite()">
+      <i class="bi bi-star"></i>
+    </button>
+    <button class="price" (click)="addToShop()">
+      <i class="bi bi-cart"></i>
+    </button>
+  </div>
+</div>

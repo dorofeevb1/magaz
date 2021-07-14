@@ -1,0 +1,64 @@
+.mat-dialog-title {
+  color: white;
+  background-color: #f48043;
+  text-align: center;
+  width: 100%;
+  font-size: 20px;
+  padding: 20px 0px !important;
+}
+
+.container {
+  display: flex;
+  max-width: 350px;
+  height: 300px;
+
+  .png {
+    width: auto;
+    max-width: 175px;
+    height: auto;
+    max-height: 144px;
+  }
+  .name {
+    margin-top: 60%;
+  }
+
+  .description {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10px;
+    font-size: auto;
+    .favor {
+      transform: inherit;
+      height: 40px;
+      margin: 0px 20%;
+      border-radius: 10px;
+      border: none;
+      padding: 10px;
+      color: #111;
+      border-radius: 10px;
+      font-size: 1.2em;
+      font-weight: 200;
+      transition: all 0.2s;
+
+      border-bottom: 0px solid #eee;
+      cursor: pointer;
+    }
+
+    .price {
+      transform: inherit;
+      height: 40px;
+
+      border-radius: 10px;
+      border: none;
+      padding: 10px;
+      color: #111;
+      border-radius: 10px;
+      font-size: 1.2em;
+      font-weight: 200;
+      transition: all 0.2s;
+
+      border-bottom: 0px solid #eee;
+      cursor: pointer;
+    }
+  }
+}

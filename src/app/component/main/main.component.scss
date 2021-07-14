@@ -1,0 +1,81 @@
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+}
+.post {
+  display: block;
+  float: left;
+  position: relative;
+  height: 25px;
+  width: 80px;
+  margin: 0 10px 18px 0;
+
+  text-decoration: none;
+  font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 25px;
+  text-align: center;
+  background-color: #f0f8ff;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 1%;
+  width: 240px;
+  height: 400px;
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
+
+  .png {
+    padding-top: 8px;
+    width: auto;
+    height: auto;
+    max-width: 240;
+    max-height: 200;
+  }
+}
+.name {
+  display: flex;
+  padding: 0 30px;
+  align-items: center;
+  cursor: pointer;
+  font: 25px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 25px;
+  width: auto;
+  height: 40px;
+  margin: 20px 20px;
+  border-radius: 10px;
+  background-color: #dbdce0;
+  z-index: 999;
+  box-shadow: 0 3px 7px 0 rgb(0 0 0 / 35%);
+}
+.mainBar {
+  display: block;
+  float: left;
+  position: relative;
+  height: 25px;
+  width: 80px;
+  margin: 0 10px 18px 0;
+
+  text-decoration: none;
+  font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 25px;
+  text-align: center;
+  background-color: #fff;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 1%;
+  width: 200px;
+  height: 250px;
+  border: 1px solid;
+  border-radius: 10px;
+  cursor: pointer;
+  .pngs {
+    padding-top: 8px;
+    width: auto;
+    height: auto;
+    max-width: 200;
+    max-height: 200;
+  }
+}

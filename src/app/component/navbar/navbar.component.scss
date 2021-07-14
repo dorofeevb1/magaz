@@ -1,0 +1,69 @@
+.navbar {
+  width: 100%;
+}
+.title {
+  display: flex;
+  background-color: #606e8c;
+  padding-left: 15%;
+  padding-right: 15%;
+  height: 70px;
+  align-items: center;
+
+  .shop {
+    transform: inherit;
+    width: 40px;
+    height: 40px;
+    margin-left: 80%;
+    margin: 8px 10px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+    color: #111;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: 200;
+    transition: all 0.2s;
+
+    border-bottom: 0px solid #eee;
+    cursor: pointer;
+    margin-right: 15px;
+  }
+  .log {
+    transform: inherit;
+    height: 40px;
+    margin: 8px 10px;
+    border: none;
+    padding: 10px;
+    color: #111;
+    border-radius: 10px;
+    font-size: 1.2em;
+    font-weight: 200;
+    transition: all 0.2s;
+
+    border-bottom: 0px solid #eee;
+    cursor: pointer;
+  }
+  .favor {
+    margin-right: 15px;
+  }
+  .name {
+    color: #eee;
+    margin-left: 20px;
+    margin-right: 80%;
+    cursor: pointer;
+  }
+}
+.menu {
+  transform: inherit;
+
+  border: none;
+  padding: 10px;
+  color: #111;
+
+  font-size: 1em;
+  font-weight: 200;
+  transition: all 0.2s;
+
+  border-bottom: 0px solid #eee;
+  cursor: pointer;
+}

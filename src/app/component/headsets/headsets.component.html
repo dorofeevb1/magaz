@@ -1,0 +1,19 @@
+<div>
+  <h3 class="name">phone</h3>
+  <div class="posts">
+    <div
+      (click)="openBrashDialog(phone)"
+      class="post"
+      *ngFor="let phone of headsets"
+    >
+      <div>
+        <img class="png" [src]="phone.img" alt="" />
+      </div>
+
+      <div>
+        <div>{{ phone.name }}</div>
+        <p>{{ phone.price }}$</p>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,17 @@
+<div class="posts">
+  <div class="post" *ngFor="let phone of favoritePhones">
+    <div>
+      <img class="png" [src]="phone.img" alt="" />
+    </div>
+
+    <div class="name">
+      <div>{{ phone.name }}</div>
+      <p>{{ phone.price }}$</p>
+    </div>
+    <div>
+      <button class="del" (click)="deletePhone(phone)">
+        Убрать из избраного
+      </button>
+    </div>
+  </div>
+</div>

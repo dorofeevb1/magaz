@@ -1,0 +1,25 @@
+<div>
+  <div>
+    <h3 class="name">notebook</h3>
+  </div>
+
+  <div class="posts">
+    <div
+      (click)="openNotebookDialog(notebook)"
+      class="post"
+      *ngFor="let notebook of notebookArr"
+    >
+      <div>
+        <img class="png" [src]="notebook.img" alt="" />
+      </div>
+
+      <div>
+        <div>
+          {{ notebook.name }}
+        </div>
+        <div>автор:{{ notebook.author }}</div>
+        <p>{{ notebook.price }}$</p>
+      </div>
+    </div>
+  </div>
+</div>

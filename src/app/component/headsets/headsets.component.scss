@@ -1,0 +1,43 @@
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+}
+.post {
+  position: relative;
+  height: 25px;
+  width: 80px;
+  margin: 0 1% 0 1%;
+  cursor: pointer;
+  text-decoration: none;
+  font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 25px;
+  text-align: center;
+  background-color: #f0f8ff;
+  border-radius: 10px;
+  margin-top: 1%;
+  width: 240px;
+  height: 300px;
+  border: 1px solid;
+
+  .png {
+    padding-top: 8px;
+    width: auto;
+    height: auto;
+    max-width: 240;
+    max-height: 200;
+  }
+}
+.name {
+  font: 20px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 25px;
+
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 1%;
+  margin: 1% 10px 0px 10px;
+}
+.br {
+  background-color: black;
+}

@@ -1,0 +1,31 @@
+<div class="navbar">
+  <div class="title">
+    <h3 class="name" routerLink="">
+      <a>Main</a>
+    </h3>
+
+    <button
+      class="shop"
+      routerLink="/favor"
+      matBadge="{{ storageService.favoritePhones.length }}"
+      matBadgeOverlap="false"
+    >
+      <i class="bi bi-star"></i>
+    </button>
+    <button
+      class="shop"
+      routerLink="/shop"
+      matBadge="{{ storageService.shopPhones.length }}"
+      matBadgeOverlap="false"
+    >
+      <i class="bi bi-cart"></i>
+    </button>
+    <button routerLink="/login" class="shop">
+      <i class="bi bi-person"></i>
+    </button>
+
+    <button class="log" routerLink="/blog">
+      <i class="bi bi-archive"></i>
+    </button>
+  </div>
+</div>

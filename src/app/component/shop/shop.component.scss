@@ -1,0 +1,78 @@
+.posts {
+  display: flex;
+  flex-wrap: wrap;
+}
+.post {
+  display: block;
+  float: left;
+  position: relative;
+  height: 25px;
+  width: 80px;
+  margin: 0 10px 18px 0;
+
+  text-decoration: none;
+  font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 25px;
+  text-align: center;
+  background-color: #f0f8ff;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-top: 1%;
+  width: 240px;
+  height: 350px;
+  border: 1px solid;
+  border-radius: 10px;
+
+  .png {
+    padding-top: 8px;
+    width: auto;
+    height: auto;
+    max-width: 240;
+    max-height: 200;
+  }
+  .btns {
+    display: flex;
+    justify-content: center;
+
+    .btn {
+      height: 40px;
+      border-radius: 10px;
+      border: none;
+      padding: 10px;
+      color: #111;
+      border-radius: 10px;
+      font-size: 1.2em;
+      font-weight: 200;
+      transition: all 0.2s;
+
+      border-bottom: 0px solid #eee;
+      cursor: pointer;
+    }
+    .btn2 {
+      height: 40px;
+      border-radius: 10px;
+      border: none;
+      padding: 10px;
+      color: #111;
+      border-radius: 10px;
+      font-size: 1.2em;
+      font-weight: 200;
+      transition: all 0.2s;
+
+      border-bottom: 0px solid #eee;
+      cursor: pointer;
+      margin-left: 10px;
+    }
+  }
+}
+.totalPrice {
+  font-size: 1.2em;
+  font-weight: 200;
+  transition: all 0.2s;
+  padding: 10px;
+  margin-left: 80%;
+  background-color: #f0f8ff;
+  border-bottom: 3px solid #eee;
+  margin-right: 20px;
+}

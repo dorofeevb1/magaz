@@ -1,0 +1,49 @@
+.blog {
+  display: flex;
+  flex-wrap: wrap;
+}
+.post {
+  position: relative;
+  height: 25px;
+  width: 80px;
+  margin: 0 30% 0 35%;
+
+  text-decoration: none;
+  font: 12px "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  line-height: 25px;
+
+  margin-top: 1%;
+  width: auto;
+  height: auto;
+  max-width: 500px;
+  max-height: 500px;
+
+  .png {
+    padding-top: 8px;
+    width: auto;
+    height: auto;
+    max-width: 500;
+    max-height: 500;
+  }
+}
+.name {
+  font: 30px "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+  color: black;
+}
+.a {
+  text-decoration: none;
+}
+.text {
+  font: 20px "Arial", Helvetica, Arial, sans-serif;
+  text-align: justify;
+  color: black;
+}
+.btn {
+  display: flex;
+  margin: 2px;
+  width: 80px;
+
+  height: 40px;
+}

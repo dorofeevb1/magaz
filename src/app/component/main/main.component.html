@@ -1,0 +1,81 @@
+<div class="posts">
+  <div class="mainbar" *ngFor="let listItem of listAll">
+    <div [routerLink]="listItem.link">
+      <div>
+        <img class="pngs" [src]="listItem.img" alt="" />
+      </div>
+      <div>
+        <h3>{{ listItem.name }}</h3>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+  <h3 routerLink="/phones" class="name">phone</h3>
+  <div class="posts">
+    <div
+      (click)="openBrashDialog(phone)"
+      class="post"
+      *ngFor="let phone of phoneArr"
+    >
+      <div>
+        <img class="png" [src]="phone.img" alt="" />
+      </div>
+
+      <div>
+        <div>{{ phone.name }}</div>
+        <p>{{ phone.price }}$</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div>
+  <div>
+    <h3 class="name" routerLink="/books">book</h3>
+  </div>
+
+  <div class="posts">
+    <div
+      (click)="openBookDialog(book)"
+      class="post"
+      *ngFor="let book of bookArr"
+    >
+      <div>
+        <img class="png" [src]="book.img" alt="" />
+      </div>
+
+      <div>
+        <div>
+          {{ book.name }}
+        </div>
+        <div>author:{{ book.author }}</div>
+        <p>{{ book.price }}$</p>
+      </div>
+    </div>
+  </div>
+</div>
+<div>
+  <div>
+    <h3 routerLink="/notebooks" class="name">notebook</h3>
+  </div>
+
+  <div class="posts">
+    <div
+      (click)="openBookDialog(notebook)"
+      class="post"
+      *ngFor="let notebook of notebookArr"
+    >
+      <div>
+        <img class="png" [src]="notebook.img" alt="" />
+      </div>
+
+      <div>
+        <div>
+          {{ notebook.name }}
+        </div>
+        <p>{{ notebook.price }}$</p>
+      </div>
+    </div>
+  </div>
+</div>
