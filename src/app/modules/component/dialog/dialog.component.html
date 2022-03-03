@@ -1,0 +1,20 @@
+
+<div class="dialog">
+    <div class="card" >
+        <img class="card-img" mat-card-image src="{{ content.url }}">
+        <form [formGroup]="commentForm" (ngSubmit)="onSubmit()">
+        <input class="card-text" type="text" placeholder="Ваше имя"  formControlName="name">
+        <input  class="card-text" type="text" placeholder="Ваш комментарий" formControlName="commentPush">
+
+        <button class="card-btn">Оставить комментарий</button>
+    </form>
+    </div>
+    <div class="comments" *ngFor=" let comment of content.comments">
+        <p class="date">{{comment.date |  date:'dd-MM-yyyy' }}</p>
+        <p class="comment">{{comment.text}}</p>
+    </div>
+    <div class="close">
+        <mat-icon (click)="closeDialog()" class="icon">close</mat-icon>
+    </div>
+</div>
+

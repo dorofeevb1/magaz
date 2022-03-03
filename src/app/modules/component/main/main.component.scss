@@ -1,0 +1,38 @@
+.title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400;
+}
+.cards{
+
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+ 
+
+    .card { 
+        max-width: 300px;
+        margin: 20px;
+        cursor: pointer;
+     
+      }
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto Condensed;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #CCCCCC;
+
+}
+  
+

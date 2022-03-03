@@ -1,0 +1,16 @@
+<div>
+    <h1 class="title">TEST APP</h1>
+</div>
+
+<div class="cards">
+    <div   *ngFor="let card of cards ">
+        <img (click)="openDialog(card)" class="card" mat-card-image src="{{card.url}}">
+    </div>
+</div>
+
+
+
+<hr>
+    <div class="footer">
+        <p>© 2018-2019</p>
+    </div>
